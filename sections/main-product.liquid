@@ -1,3 +1,17 @@
+
+
+<h1>hello world!!!!
+
+
+{{ product.title }}
+{{ cart.item_count }}
+{% for item in cart.items %}
+{{ item.title }}
+{{ item.quantity }}
+{% endfor %}
+
+{{  section.settings.text }}
+</h1>
 <section
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -2305,6 +2319,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "text",
+      "id":"testtest",
+      "label":"Test tekstje",
+      "default": "Hellookes"
     }
   ]
 }
